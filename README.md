@@ -1,8 +1,8 @@
-# CXR17
+# CXR17_DenseParallel_ELM
 
 ### Built With
 
-* [Firebase](https://firebase.google.com)
+* [Tensorflow Lite](https://www.tensorflow.org/lite)
 * [Picasso](https://square.github.io/picasso/)
 * [Android Image Cropper](https://github.com/ArthurHub/Android-Image-Cropper/)
 
@@ -14,21 +14,32 @@
 
 ### Installation
 
-1. Clone the repo using the following link in GitHub Desktop / Download the .ZIP archive.
+1. Clone the repo using the following link in GitHub Desktop
    ```sh
    git clone https://github.com/khalid-syfullah/cxr17_denseparallel_elm.git
    ```
-2. Download & Install Android Studio Bumblebee
+   Or, Download & Extract the .ZIP archive.
+
+2. Download & Install Android Studio Bumblebee (May work with Dolphin also)
 3. Download Android SDK 31
 4. Open the project from Android Studio. It will download and install Gradle packages in a few minutes.
-
-4. Check for the following dependencies in app `build.gradle` file & add if not exists
+5. Wait till the Grade packages installation is finished.
+6. Check for the following dependencies in app `build.gradle` file (it should be there already) 
+   & add the following if not exists
    ```Java
    dependencies {
-    
-    api 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
-    }
+   
+    implementation 'org.tensorflow:tensorflow-lite-support:0.3.0'
+    implementation 'org.tensorflow:tensorflow-lite-metadata:0.3.0'
+    implementation 'org.tensorflow:tensorflow-lite-gpu:2.3.0'
+    implementation 'org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.3.0'
+   
+ }
 
+7. Build the project.
+8. To run the project on your phone, first turn on USB debugging in your phone from Developer Options (see tutorial)
+   and connect the phone via USB. Then, run the project.
+9. Alternatively, you can run the project on Emulator (best works with SDK version 31).
    ```
 
 
