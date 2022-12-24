@@ -23,17 +23,10 @@
 3. Download Android SDK 31
 4. Open the project from Android Studio. It will download and install Gradle packages in a few minutes.
 
-4. Add dependencies in app `build.gradle` file
+4. Check for the following dependencies in app `build.gradle` file & add if not exists
    ```Java
    dependencies {
     
-    implementation 'com.google.firebase:firebase-analytics:17.2.2'
-    implementation 'com.google.firebase:firebase-auth:19.3.2'
-    implementation 'com.google.firebase:firebase-messaging:20.2.1'
-    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
-    implementation 'com.squareup.picasso:picasso:2.71828'
-    implementation 'org.jsoup:jsoup:1.11.1'
     api 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
     }
 
